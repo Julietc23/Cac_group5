@@ -1,0 +1,71 @@
+body{
+    display:grid;
+    grid-template: 150px repeat(6, 300px) 150px/repeat(3, auto);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F4EEE0;
+    gap:0.7rem;
+}
+/*todo lo relacionado al header*/
+header{
+    display: flex;
+    flex-flow:column;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    background-image: url(pics/fondoheader2.jpg);
+    background-attachment: fixed;
+    color: aliceblue;
+    border-radius: 7px;
+}
+.parth-1 h1:first-letter{
+    color:blue;
+}
+.parth-1{
+    flex-grow: 2;
+}
+.parth-2 ul{
+    display:flex;
+    flex-direction:row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.parth-2 li{
+    float:left;
+}
+.itul a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.itul a:hover{
+    background-color: rgba(105, 106, 106, 0.621);
+    transition: 0.5s;
+}
+/*todo lo relacionado al main*/
+main{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    border-radius: 7px;
+}
+main section:nth-child(1){
+    background-color:#333;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    height: 20%;
+}
+
+/*generalidades de los titulos*/
+.tit{
+    text-align: center;
+}
+.bgb{
+    background-color: rgba(0, 0, 255, 0.781);
+}
