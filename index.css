@@ -1,25 +1,47 @@
 body{
     display:grid;
-    grid-template: 150px repeat(6, 300px) 150px/repeat(3, auto);
-    font-family: Arial, Helvetica, sans-serif;
+    grid-template: 150px 300px 1500px 150px/repeat(3, auto);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     gap:0.7rem;
     margin: 0;
+    background-color: black;
 }
 /*todo lo relacionado al header*/
 header{
+    z-index: 2;
     display: flex;
     flex-flow:column;
     align-items: center;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
-    background-color: #2E4F4F;
     color: aliceblue;
 }
-.parth-1 h1:first-letter{
-    color: rgba(0, 0, 255, 0.5);;
+.degheader{
+    z-index: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background: -webkit-radial-gradient(circle, rgba(0,0,0,0.5),black);
+    height: 100%;
+}
+.bgheader{
+    z-index: -3;
+    background-image: url(pics/348654-4k-wallpaper.jpg);
+    background-attachment: fixed;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 100%;
+}
+.parth-1 h1:nth-child(1){
+    animation-name: firstletter;
+    animation-duration: 8s;
 }
 .parth-1{
+    display:flex;
     flex-grow: 2;
 }
 .parth-2 ul{
@@ -29,30 +51,60 @@ header{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #CBE4DE;
+    background-color: none;
 }
 .parth-2 li{
     float:left;
 }
 .itul a{
     display: block;
-    color:#2C3333;
+    color:white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 .itul a:hover{
-    background-color: rgba(105, 106, 106, 0.621);
+    border:3px solid rgba(251, 253, 253, 0.621);
     transition: 0.5s;
 }
 /*todo lo relacionado al main*/
 main{
+    display:grid;
+    grid-template: 200px 600px repeat(3, auto)/auto auto;
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 7;
+    grid-row-start: 3;
     border-radius: 7px;
-    border: 1px solid black;
+    margin: 1rem;
+}
+main section:nth-child(1){
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    z-index: 3;
+    background-image: url(pics/classmat.jpg);
+    background-position:center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 7px;
+}
+.textsection1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:large;
+    font-style: italic;
+    padding: 4rem;
+}
+.main section:nth-child(2){
+    color: white;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
 }
 
 
@@ -61,5 +113,27 @@ main{
     text-align: center;
 }
 .bgb{
-    background-color: rgba(0, 0, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*area de animaciones*/
+@keyframes firstletter{
+    0% {
+        color: rgb(110, 110, 110);
+    }
+    20%{
+        color: #ff0000de;
+    }
+    40%{
+        color: rgba(255, 0, 221, 0.977);
+    }
+    60%{
+        color: rgba(204, 0, 255, 0.918);
+    }
+    80%{
+        color: #ff0000de;
+    }
+    100%{
+        color: rgb(110, 110, 110);
+    }
 }
