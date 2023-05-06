@@ -1,6 +1,6 @@
 body{
     display:grid;
-    grid-template: 150px 300px 1500px 150px/repeat(3, auto);
+    grid-template: 150px 300px 3000px 150px/repeat(3, auto);
     gap:0.7rem;
     margin: 0;
     background-color: black;
@@ -69,17 +69,19 @@ header{
 /*todo lo relacionado al main*/
 main{
     display:grid;
-    grid-template: 200px 600px repeat(3, auto)/auto auto;
+    grid-template: 500px 600px 600px repeat(2, auto)/auto auto;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
+    color:white;
     border-radius: 7px;
     margin: 1rem;
-    gap: 1rem;
+    gap: 4rem;
     margin:0;
     padding: 0;
 }
 main section:nth-child(1){
+    height: 200px;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -91,7 +93,9 @@ main section:nth-child(1){
     grid-row-start: 1;
     grid-row-end: 2;
     border-radius: 7px;
-    margin:1rem;
+    margin:150px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .textsection1{
     color: white;
@@ -104,7 +108,6 @@ main section:nth-child(2){
     display: grid;
     grid-template: 3rem 25% 1fr/ 50% 15% 1fr;
     padding: 1rem;
-    font-size: large;
     font-style: italic;
     color: white;
     grid-column-start: 1;
@@ -138,13 +141,109 @@ main section:nth-child(2) img:hover{
     border-bottom:5px solid white;
     transition: 0.5s;
 }
+main section:nth-child(3){
+    display: grid;
+    grid-template: 10% 90%/auto;
+    margin-top: 3%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    gap: 5%;
+    background: linear-gradient(black,white);
+    background-attachment: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.titsec3{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.div2sec3{
+    display: grid;
+    grid-template: 100% / auto auto auto;
+    column-gap: 1.5rem;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.curso1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin-right: 1.5rem;
+    margin:3rem;
+    background-color: white;
+    color: black;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.imgcurso1{
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.imgcurso1 img{
+    margin-left: 2.6rem;
+    width: 70%;
+}
+.curso1 div:nth-child(2){
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.curso2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+    border-radius: 7px;
+    margin:3rem;
+    background-color: white;
+    color: black;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+.imgcurso2{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.imgcurso2 img{
+    margin-left: 1rem;
+    width: 90%;
+}
+.curso2 div:nth-child(2){
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.curso3{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-right: 1.5rem;
+    margin:3rem;
+    border-radius: 7px;
+    background-color: tomato;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
 
-/*generalidades de los titulos*/
+
+
+/*Generalidades de los titulos*/
 .tit{
     text-align: center;
 }
 .bgb{
     background-color: rgba(255, 255, 255, 0.5);
+}
+.textsiz1{
+    font-size: 1.5rem;
+}
+.tit3{
+    font-size: 3rem;
+}
+.titcent{
+    text-align: center;
 }
 
 /*area de animaciones*/
