@@ -116,13 +116,19 @@ main {
     background-color: #222831;
 }
 
-.titleprinc {
-    text-align: center;
+.principaltitle {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
     background-color: #30475E;
-    font-family: 'Oswald', sans-serif;
     color: #DDDDDD;
-    font-size: xx-large;
-    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.principaltitle h1 {
+    text-align: center;
 }
 
 .coursecontainer {
@@ -220,5 +226,26 @@ main {
     text-align: center;
 }
 
+.levelpartinfbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px outset #373737;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    margin-top: 9px;
+    background-color: #373737;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #DDDDDD;
+    transition: 0.5s;
+}
+
+.levelpartinfbutton:hover {
+    color:black;
+    background-color: #DDDDDD;
+}
 
 /*seccion 1 del main*/
