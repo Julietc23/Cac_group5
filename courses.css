@@ -137,8 +137,8 @@ main {
     grid-template-rows: 450px;
     background-color: #222831;
     justify-content: space-around;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .coursecontainer>div {
@@ -248,4 +248,41 @@ main {
     background-color: #DDDDDD;
 }
 
-/*seccion 1 del main*/
+/*seccion 2 del main*/
+
+.testexample {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 700px;
+    padding: 10px;
+    column-gap: 10px;
+}
+
+.textzone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulogrande {
+    font-size: 50px;
+    font-family: 'Tilt Warp', cursive;
+    color: #DDDDDD;
+}
+
+.titulopequeño {
+    font-size: 30px;
+    font-family: 'Tilt Warp', cursive;
+    color: #DDDDDD;
+}
+
+.containerimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgtest {
+    text-align: center;
+}
