@@ -1,7 +1,6 @@
 body{
     display:grid;
-    grid-template: 150px 300px 2500px 150px/repeat(3, auto);
-    gap:0.7rem;
+    grid-template: 150px 0px 3000px/repeat(3, auto);
     margin: 0;
     background-color: #222831;
 }
@@ -9,39 +8,26 @@ body{
            /*todo lo relacionado al header*/
 
 header{
+    width: 100%;
+    position:fixed;
     z-index: 2;
     display: flex;
     flex-flow:column;
-    align-items: center;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
+    background-color: #3F4E4F;
     color: aliceblue;
 }
-.degheader{
-    z-index: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    background: -webkit-radial-gradient(circle, rgba(0,0,0,0.5),black);
-    height: 100%;
-}
-.bgheader{
-    z-index: -3;
-    background-image: url(pics/348654-4k-wallpaper.jpg);
-    background-attachment: fixed;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    width: 100%;
-}
+
 .parth-1 h1:nth-child(1){
+    text-align: center;
     animation-name: firstletter;
     animation-duration: 8s;
 }
 .parth-1{
+    justify-content: center;
+    align-items: center;
     display:flex;
     flex-grow: 2;
 }
@@ -54,10 +40,9 @@ header{
     overflow: hidden;
     background-color: none;
 }
-.parth-2 li{
-    float:left;
-}
+
 .itul a{
+    float:left;
     display: block;
     color:white;
     text-align: center;
@@ -65,7 +50,7 @@ header{
     text-decoration: none;
 }
 .itul a:hover{
-    border:3px solid rgba(251, 253, 253, 0.621);
+    border:1px solid rgba(251, 253, 253, 0.621);
     transition: 0.5s;
 }
 
@@ -121,6 +106,7 @@ main section:nth-child(1){
              /*seccion 2 del main*/
 
 main section:nth-child(2){
+    margin-bottom:0 ;
     display: grid;
     grid-template: 11% 17% 17% 17% 17%/ 25% 25% 25% 25%;
     font-style: italic;
@@ -454,6 +440,7 @@ main section:nth-child(2){
          /*seccion 3 del main*/
 
 main section:nth-child(3){
+    margin-top: 0;
     display: grid;
     grid-template: 10% 90%/auto;
     grid-column-start: 1;
@@ -592,7 +579,7 @@ main section:nth-child(4){
     text-align: center;
 }
 .bgb{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(199, 199, 199, 0.2);
 }
 .textsiz1{
     font-size: 1.5rem;

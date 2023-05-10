@@ -1,57 +1,40 @@
-body {
-    display: grid;
-    grid-template: 150px 300px 3000px 150px/repeat(3, auto);
-    gap: 0.7rem;
+body{
+    display:grid;
+    grid-template: 150px 0px 2500px 150px/repeat(3, auto);
+    gap:0.7rem;
     margin: 0;
-    background-color: black;
+    background-color: #222831;
 }
 
+
 /*todo lo relacionado al header*/
-header {
+header{
+    width: 100%;
+    position:fixed;
     z-index: 2;
     display: flex;
-    flex-flow: column;
-    align-items: center;
+    flex-flow:column;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
+    background-color: #3F4E4F;
     color: aliceblue;
 }
 
-.degheader {
-    z-index: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.5), black);
-    height: 100%;
-}
-
-.bgheader {
-    z-index: -3;
-    background-image: url(pics/348654-4k-wallpaper.jpg);
-    background-attachment: fixed;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    width: 100%;
-}
-
-.parth-1 h1:nth-child(1) {
+.parth-1 h1:nth-child(1){
+    text-align: center;
     animation-name: firstletter;
     animation-duration: 8s;
 }
-
-.parth-1 {
-    display: flex;
+.parth-1{
+    justify-content: center;
+    align-items: center;
+    display:flex;
     flex-grow: 2;
 }
-
-.parth-2 ul {
-    display: flex;
-    flex-direction: row;
+.parth-2 ul{
+    display:flex;
+    flex-direction:row;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -59,21 +42,20 @@ header {
     background-color: none;
 }
 
-.parth-2 li {
-    float: left;
-}
-
-.itul a {
+.itul a{
+    float:left;
     display: block;
-    color: white;
+    color:white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-
-.itul a:hover {
-    border: 3px solid rgba(251, 253, 253, 0.621);
+.itul a:hover{
+    border:1px solid rgba(251, 253, 253, 0.621);
     transition: 0.5s;
+}
+.bgb{
+    background-color: rgba(199, 199, 199, 0.2);
 }
 
 /*area de animaciones*/
