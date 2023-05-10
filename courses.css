@@ -1,6 +1,6 @@
 body{
     display:grid;
-    grid-template: 150px 0px 2500px /repeat(3, auto);
+    grid-template: 150px 0px 4500px /repeat(3, auto);
     gap:0.7rem;
     margin: 0;
     background-color: #222831;
@@ -267,4 +267,71 @@ main {
 
 .imgtest {
     text-align: center;
+}
+
+/* Sección 3 */
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 20px;
+    gap: 20px;
+    height: 3000px;
+
+}
+
+.content > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptiontitle {
+    justify-content: center;
+    display: flex;
+    height: 8%;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: cornflowerblue
+
+}
+
+.descriptiontext {
+    display: flex;
+    height: 12%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #DDDDDD;
+}
+
+.titletemary {
+    padding-left: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    color: #DDDDDD;
+}
+
+.descriptionlist {
+    height: 30%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #DDDDDD;
+}
+
+.coursebuttoncontainer{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #30006e;
+    border-radius: 10px;
+
+}
+
+.coursebuttontext {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: #DDDDDD;
 }
