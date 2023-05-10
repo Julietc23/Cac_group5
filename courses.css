@@ -1,6 +1,6 @@
 body{
     display:grid;
-    grid-template: 150px 0px 2500px 150px/repeat(3, auto);
+    grid-template: 150px 0px 2500px /repeat(3, auto);
     gap:0.7rem;
     margin: 0;
     background-color: #222831;
