@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
     <title>4Mathics</title>
 </head>
 
@@ -65,9 +68,9 @@
                     </div>
                     <div class="duration">
                         <div class="iconclock"><img src="pics/clock.png" alt=""></div>
-                        <div class="cantclases">9 clases.</div>
+                        <div class="cantclases">10 clases.</div>
                     </div>
-                    <div class="buttonvermas">Ver más</div>
+                    <a href="#derivadas" class="buttonvermas">Ver más</a>
                 </div>
                 <div>
                     <div class="title1">
@@ -93,7 +96,7 @@
                         <div class="iconclock"><img src="pics/clock.png" alt=""></div>
                         <div class="cantclases">8 clases.</div>
                     </div>
-                    <div class="buttonvermas">Ver más</div>
+                    <a href="#integrales" class="buttonvermas">Ver más</a>
                 </div>
                 <div>
                     <div class="title1">
@@ -119,18 +122,18 @@
                         <div class="iconclock"><img src="pics/clock.png" alt=""></div>
                         <div class="cantclases">10 clases.</div>
                     </div>
-                    <div class="buttonvermas">Ver más</div>
+                    <a href="#calcintegral" class="buttonvermas">Ver más</a>
                 </div>
             </div>
         </section>
         <section>
             <div class="testexample">
                 <div class="textzone">
-                    <div class="titulogrande">¡Pon a prueba tus conocimientos!</div>
+                    <div class="titulogrande" id="derivadas">¡Pon a prueba tus conocimientos!</div>
                     <div class="titulopequeño">Todos nuestros cursos incluyen un examen al final del mismo</div>
                 </div>
                 <div class="containerimg">
-                    <div class="imgtest" id="derivada"><img src="pics/test.png" alt=""></div>
+                    <div class="imgtest"><img src="pics/test.png" alt=""></div>
                 </div>
             </div>
         </section>
@@ -138,42 +141,46 @@
             <div class="content">
                 <div class="contenedor-imagen"><img src="pics/DERIVADA1.png" alt=""></div>
                 <div class="infocourse">
-                    <div class="texto1">Curso de Introducción a las derivadas</div>
+                    <div class="texto1" id="integrales">Curso de Introducción a las derivadas</div>
                     <div class="texto2"><b>Temario:</b></div>
                     <div class="temarylist">
                         <ul class="column">
-                            <li>La recta secante y tangente en un punto.</li>
-                            <li>Límite y pendiente de la recta tangente en un punto.</li>
+                            <li>Tangente en un punto.</li>
+                            <li>Pendiente de la recta tangente.</li>
                             <li>Derivada por definición.</li>
                             <li>Derivada por regla y tabla de derivadas.</li>
                             <li>Derivada del producto y del cociente de funciones.</li>
                         </ul>
                         <ul class="column">
-                            <li>Derivada de una función compuesta. Regla de la cadena.</li>
-                            <li>Derivada de sen(x) / x. Teorema del "Sandwich".</li>
-                            <li>Criterio de la primera y segunda derivada.</li>
-                            <li>Analisis de funciones: puntos críticos e intervalos de crecimiento y decrecimiento</li>
+                            <li>Derivada de una función compuesta.</li>
+                            <li>Derivada de sen(x) / x.</li>
+                            <li>Criterio de la 1° y 2° derivada.</li>
+                            <li>Puntos críticos e intervalos de crecimiento y decrecimiento.</li>
                             <li>Evaluación</li>
                         </ul>
                     </div>
+                    <div class="buttonprinc">Empezar el curso</div>
                 </div>
                 <div class="infocourse">
-                    <div class="texto1">Curso de introducción a las Integrales</div>
+                    <div class="texto1" id="calcintegral">Curso de introducción a las Integrales</div>
                     <div class="texto2"><b>Temario:</b></div>
                     <div class="temarylist">
                         <ul class="column">
                             <li>Derivada y antiderivada.</li>
-                            <li>Partes de una integral: integrando y diferencial de integración.</li>
+                            <li>Integrando y diferencial de integración.</li>
                             <li>Integrales indefinidas.</li>
                             <li>Integral de una constante por una función.</li>
+                            <li>Integral de la suma y de la resta de funciones</li>
                         </ul>
                         <ul class="column">
-                            <li>Integral de la suma y de la resta de funciones.</li>
+                            <li>Integral de e elevado a x</li>
+                            <li>La tabla de integrales</li>
                             <li>Integración por sustitución.</li>
                             <li>Integración por partes.</li>
                             <li>Evaluación.</li>
                         </ul>
                     </div>
+                    <div class="buttonprinc2">Empezar el curso</div>
                 </div>
                 <div class="contenedor-imagen"><img src="pics/calculator.png" alt=""></div>
                 <div class="contenedor-imagen"><img src="pics/integral.png" alt=""></div>
@@ -186,18 +193,21 @@
                             <li>Los límites de integración.</li>
                             <li>El teorema fundamental del Cálculo Integral.</li>
                             <li>Área bajo la curva.</li>
+                            <li>Área entre dos curvas.</li>
                         </ul>
                         <ul class="column">
-                            <li>Área entre dos curvas.</li>
+                            <li>Volumen de un sólido de revolución</li>
+                            <li>Longitud de arco.</li>
                             <li>Límites de integración infinitos.</li>
                             <li>Integrales impropias.</li>
                             <li>Evaluación.</li>
                         </ul>
                     </div>
+                    <div class="buttonprinc">Empezar el curso</div>
                 </div>
             </div>
         </section>
-        </main>
+    </main>
     <footer>
         <div class="socialfooter">
             <div class="socialicon f">

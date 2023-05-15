@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template: 150px 0px 4500px 150px/repeat(3, auto);
+    grid-template: 150px 0px 3000px 150px/repeat(3, auto);
     gap: 0.7rem;
     margin: 0;
     background-color: #222831;
@@ -32,6 +32,7 @@ header {
     align-items: center;
     display: flex;
     flex-grow: 2;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 
 .parth-2 ul {
@@ -51,6 +52,7 @@ header {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 
 .itul a:hover {
@@ -156,7 +158,7 @@ main {
 
 .title1text {
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
     font-size: 20px;
     color: #DDDDDD;
 }
@@ -169,7 +171,7 @@ main {
 }
 
 .title2text {
-    font-family: 'Tilt Warp', cursive;
+    font-family: 'Wix Madefor Display', sans-serif;
     font-size: 30px;
     color: #DDDDDD;
 }
@@ -182,8 +184,8 @@ main {
 
 .descriptionzonetext {
     color: #DDDDDD;
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 17px;
 }
 
 .buttonvermas {
@@ -199,6 +201,15 @@ main {
     font-size: 20px;
     font-family: 'Konkhmer Sleokchher', cursive;
     transition: 0.3s
+}
+
+.coursescontainer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .buttonvermas:hover {
@@ -225,9 +236,9 @@ main {
 
 .cantclases {
     height: 20px;
-    margin-top: 15px;
+    margin-top: 18px;
     color: #DDDDDD;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 
 hr {
@@ -330,26 +341,59 @@ hr {
 .texto1 {
     margin-top: 30px;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
     font-size: 30px;
     color: #DDDDDD;
 }
 
 .texto2 {
     margin-left: 20px;
-    font-family: 'Oswald', sans-serif;
+    margin-top: 10px;
+    font-family: 'Wix Madefor Display', sans-serif;
     font-size: 20px;
     color: #DDDDDD;
 }
 
 .temarylist {
     display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .column {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
     color: #DDDDDD;
     font-size: 17px;
+}
+
+.buttonprinc {
+    display: flex;
+    background: linear-gradient(to right, #00ff75, #00bfff);
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    font-family: 'Konkhmer Sleokchher', cursive;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 55px;
+    color: #181818;
+}
+
+.buttonprinc2 {
+    display: flex;
+    background: linear-gradient(to right, #00ff75, #00bfff);
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 53px;
+    font-family: 'Konkhmer Sleokchher', cursive;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 55px;
+    color: #181818;
 }
 
 /*Area del footer*/

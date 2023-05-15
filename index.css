@@ -30,6 +30,7 @@ header{
     align-items: center;
     display:flex;
     flex-grow: 2;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 .parth-2 ul{
     display:flex;
@@ -48,6 +49,7 @@ header{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 .itul a:hover{
     border:1px solid rgba(251, 253, 253, 0.621);
