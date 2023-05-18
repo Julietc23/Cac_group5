@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pics/favicon.ico" type="ico" sizes="16px">
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+    <title>4Mathics</title>
+</head>
+<body>
+    <header>
+        <div class="parth-1">
+            <h1>4</h1>
+            <h1 class="tit">Mathics</h1>
+        </div>
+        <div class="parth-2">
+            <nav>
+                <ul>
+                    <li class="itul"><a href="index.html">Inicio</a></li>
+                    <li class="itul"><a href="courses.html">Cursos</a></li>
+                    <li class="itul"><a href="biblio.html">Biblioteca</a></li>
+                    <li class="itul bgb"><a href="form.html">Soporte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <h2>Contacto</h2>
+    <form action="procesar_formulario.php" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+      
+      <input type="submit" value="Enviar">
+    </form>
+</main>
+<footer>
+    <div class="socialfooter">
+        <div class="socialicon f">
+            <a href="https://www.facebook.com" target="_blank" alt="facebook"><img src="pics/facebook.png"></a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </div>
+        <div class="socialicon t">
+            <a href="https://twitter.com" target="_blank" alt="twitter"><img src="pics/gorjeo.png"></a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+
+        </div>
+        <div class="socialicon i">
+            <a href="https://www.instagram.com" target="_blank" alt="instagram"><img src="pics/instagram.png"></a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+
+        </div>
+    </div>
+    <div class="footer-logo">
+        <img src="pics/favicon.ico" alt="Logo de TuPagina">
+        <h3>4Mathics</h3>
+    </div>
+    <div class="secfooter">
+        <div class="supportfooter">
+            <a href="support.html"><img src="pics/soporte-tecnico.png" alt="soporte"></a>
+            <a href="support.html">Soporte</a>
+        </div>
+        <div class="rights">
+            <p>Todos los derechos reservados </p>
+            <p class="bluetext"> © </p>
+            <p> 4Mathics 2023</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
