@@ -38,26 +38,35 @@
             <h1>CONTACTANOS</h1>
             <p>Escribi tu consulta y enviala. En la brevedad te responderemos.</p>
         </div>
-        <div class="d2">
-            <form>
-                <ul>
-                 <li>
-                   <label id=#name>Nombre:</label>
-                   <input placeholder="Indique su nombre"type="text" id="name" name="user_name">
-                 </li>
-                 <li>
-                   <label id=#mail>Correo electrónico:</label>
-                   <input placeholder="indique un correo" type="email" id="mail" name="user_mail">
-                 </li>
-                 <li>
-                   <label id=#msg>Consulta:</label>
-                   <textarea placeholder="indique su consulta" id="msg" name="user_message"></textarea>
-                 </li>
-                 <li class="button">
-                    <button type="submit">Envíe su mensaje</button>
-                  </li>
-                </ul>
-               </form>
+        <div class="bg-form">
+            <div class="container">
+                <div class="form">
+                    <form action="index.html">
+                        <h3 class="titulo">Contact</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input">
+                            <label for="">Nombre</label>
+                            <span>Nombre</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="Numero" class="input">
+                            <label for="">Telefono</label>
+                            <span>Telefono</span>                         
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label for="">Consulta</label>
+                            <span>Consulta</span>
+                        </div>
+                        <input type="submit" value="Enviar" class="boton">
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -93,6 +102,7 @@
             </div>
         </div>
     </footer>
+    <script src="javscrips/form.js"></script>
 </body>
 
 </html>

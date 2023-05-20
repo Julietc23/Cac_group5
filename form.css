@@ -10,7 +10,7 @@ body{
 header{
     width: 100%;
     position:fixed;
-    z-index: 2;
+    z-index: 2000;
     display: flex;
     flex-flow:column;
     grid-column-start: 1;
@@ -65,55 +65,135 @@ main {
     grid-row-start: 2;
     font-family: 'Wix Madefor Display', sans-serif;
     margin: 10%;
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.41);
     }
 .d1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    grid-column-start:1;
+    grid-column-end: 1;
     background-image: url(pics/imagensuport3.jpg);
-    background-size: 100%;
-    background-position: center;
-    color: black;
-    border-radius: 7px;
-    grid-column-start: 1;
-    grid-column-start: 1;
+    background-size: 160%;
 }
 .d1 p{
-    background-color: rgba(244, 242, 242, 0.653);
-    padding: 0.5rem;
+    background-color: rgba(222, 222, 222, 0.719);
+    padding: 1%;
 }
-.d2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 7px;
-    padding: 10%;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    background-color: rgb(244, 242, 242);
+.bg-form{
+    background-color: rgb(238, 238, 238);
 }
-form {
-    background-color: white;
-    border-radius: 7px;
-    height: 100%;
+form{
+    padding:2.3rem 2.2rem;
+    z-index: 10;
+    overflow:hidden;
+    position: relative;
+}
+.titulo{
+    color:#3F4E4F;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+.input-container{
+    position: relative;
+    margin:1rem 0;
+}
+.input{
     width: 100%;
-    box-shadow: 0 0 20px -10px black;
+    outline: none;
+    border:2px solid rgba(137, 136, 136, 0.621);
+    background: none;
+    padding: 0.6rem;
+    color:#3F4E4F;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+    transition: 0.3s;
 }
-form li{
-    list-style: none;
+textarea.input{
+    padding: 0.4rem;
+    min-height: 120px;
+    max-width: 100%;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
 }
-.div-names{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8%;
+.input-container label{
+    position: absolute;
+    top: 48%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding:0 0.4rem;
+    color:rgb(94, 94, 94);
+    font-size: 1rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
 }
-.div-datos{
-    display: flex;
-    flex-direction: column wrap;
+.input-container.textarea label{
+    top:1rem;
+    transform: translateY(0);
+}
+.boton{
+    padding:0.6rem 1.3rem;
+    background-color:rgba(94, 94, 94);
+    border:2px solid rgba(140, 140, 140, 0.453);
+    font-size: 1rem;
+    color:rgb(238, 238, 238);
+    line-height: 1;
+    border-radius:25px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+.boton:hover{
+    background-color: transparent;
+    color:rgba(94, 94, 94);
+}
+.input-container span{
+    position: absolute;
+    top:0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    padding: 0 0.4rem;
+    color:transparent;
+    pointer-events: none;
+    z-index: 500;
+}
+.input-container span::before,
+.input-container span::after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    background-color: rgba(238, 238, 238);
+    top:50%;
+    transform: translateY(-50%);
+}
+.input-container span::before{
+    left: 50%;
+}
+.input-container span::after{
+    right: 50%;
+}
+.input-container.focus label{
+    top:0;
+    transform: translateY(-50%);
+    left:25px;
+    font-size: 0.9rem;
+}
+.input-container.focus span::before,
+.input-container.focus span::after{
+    width: 50%;
+    opacity: 1;
 }
 
 /*todo lo relacionado al footer*/
