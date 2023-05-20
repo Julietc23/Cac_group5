@@ -1,6 +1,6 @@
 body{
     display:grid;
-    grid-template: 150px 0px 3000px 150px/repeat(3, auto);
+    grid-template: 150px 0px 3000px 150px/33% 33% 33%;
     margin: 0;
     background-color: #222831;
 }
@@ -82,13 +82,13 @@ main section:nth-child(1){
     grid-row-start: 1;
     grid-row-end: 2;
     border-radius: 7px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 .div1sec1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 2%;
-    font-size: 110%;
+    font-size: 120%;
     grid-column-start:1 ;
     grid-column-end: 1;
 }

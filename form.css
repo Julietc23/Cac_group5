@@ -1,6 +1,6 @@
 body{
     display:grid;
-    grid-template: 150px 1000px 150px/repeat(3, auto);
+    grid-template: 150px 800px 150px/repeat(3, auto);
     margin: 0;
     background-color: #222831;
 }
@@ -58,17 +58,71 @@ header{
 /*Todo lo relacionado al main*/
 
 main {
+    display: grid;
+    grid-template: 100%/50% 50%;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
+    font-family: 'Wix Madefor Display', sans-serif;
+    margin: 10%;
+    }
+.d1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(pics/imagensuport3.jpg);
+    background-size: 100%;
+    background-position: center;
+    color: black;
+    border-radius: 7px;
+    grid-column-start: 1;
+    grid-column-start: 1;
 }
+.d1 p{
+    background-color: rgba(244, 242, 242, 0.653);
+    padding: 0.5rem;
+}
+.d2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    padding: 10%;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    background-color: rgb(244, 242, 242);
+}
+form {
+    background-color: white;
+    border-radius: 7px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 20px -10px black;
+}
+form li{
+    list-style: none;
+}
+.div-names{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+}
+.div-datos{
+    display: flex;
+    flex-direction: column wrap;
+}
+
 /*todo lo relacionado al footer*/
 footer {
     display: grid;
     grid-template: 100%/25% 25% 25% 25%;
     grid-row-start: 3;
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 4;
     background-color: #3F4E4F;
 }
 
