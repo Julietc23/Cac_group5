@@ -41,26 +41,26 @@
         <div class="bg-form">
             <div class="container">
                 <div class="form">
-                    <form action="index.html">
+                    <form id="formulario" onsubmit="return validarFormulario()">
                         <h3 class="titulo">Contact</h3>
                         <div class="input-container">
-                            <input type="text" name="name" class="input">
-                            <label for="">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" class="input">
+                            <label for="nombre">Nombre</label>
                             <span>Nombre</span>
                         </div>
                         <div class="input-container">
-                            <input type="email" name="email" class="input">
-                            <label for="">Email</label>
+                            <input type="text" name="mail" id="mail" class="input">
+                            <label for="mail">Email</label>
                             <span>Email</span>
                         </div>
                         <div class="input-container">
-                            <input type="tel" name="Numero" class="input">
-                            <label for="">Telefono</label>
+                            <input type="tel" name="tel" id="tel" class="input">
+                            <label for="tel">Telefono</label>
                             <span>Telefono</span>                         
                         </div>
                         <div class="input-container textarea">
-                            <textarea name="message" class="input"></textarea>
-                            <label for="">Consulta</label>
+                            <textarea name="consulta" class="input"></textarea>
+                            <label for="consulta">Consulta</label>
                             <span>Consulta</span>
                         </div>
                         <input type="submit" value="Enviar" class="boton">
@@ -102,7 +102,7 @@
             </div>
         </div>
     </footer>
-    <script src="javscrips/form.js"></script>
+    <script src="form.js"></script>
 </body>
 
 </html>

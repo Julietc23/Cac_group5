@@ -194,6 +194,7 @@ textarea.input{
 .input-container.focus span::after{
     width: 50%;
     opacity: 1;
+    
 }
 
 /*todo lo relacionado al footer*/
