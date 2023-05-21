@@ -90,6 +90,9 @@ form{
     overflow:hidden;
     position: relative;
 }
+h3{
+    text-align: center;
+}
 .titulo{
     color:#3F4E4F;
     font-weight: 500;
