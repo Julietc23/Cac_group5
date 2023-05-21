@@ -1,0 +1,329 @@
+body {
+    background-color: #222831;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    font-family: 'Wix Madefor Display', sans-serif;
+    background-color: #3F4E4F;
+    position: fixed;
+    width: 100%;
+}
+
+header .partsheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+header .titleprincipal {
+    color: #dddddd;
+    padding-bottom: 20px;
+}
+
+.partsheader nav a {
+    text-decoration: none;
+    color: #dddddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.fijo {
+    background-color: rgba(199, 199, 199, 0.2);
+}
+
+.partsheader nav a:hover {
+    background-color: rgba(199, 199, 199, 0.2);
+    transition: 0.5s;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 75vh;
+    background-color: #222831;
+}
+
+#intro .containerintro h1 {
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #dddddd;
+    padding: 20px;
+}
+
+#intro .containerintro button {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #dddddd;
+    border: 1px solid;
+    transition: 0.2s
+}
+
+#intro .containerintro button:hover {
+    background-color: #171717;
+    color: #dddddd;
+    border: 1px solid #171717;
+}
+
+.containercursos {
+    display: flex;
+    flex-direction: column;
+    background-color: #222831;
+    height: 1500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.curso {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #171717;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #dddddd;
+    justify-content: space-around;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.curso button {
+    font-family: 'Wix Madefor Display', sans-serif;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    transition: 0.3s
+}
+
+.curso button:hover {
+    background-color: black;
+    color: #dddddd;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #dddddd;
+}
+
+.test h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.test img {
+    height: auto;
+    max-width: 70%;
+    padding: 20px;
+}
+
+.descriptioncontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 0 500px 0 500px 0;
+    background-color: #dddddd;
+    padding: 20px;
+    gap: 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #171717;
+    color: #dddddd;
+    justify-content: space-between;
+    font-family: 'Wix Madefor Display', sans-serif;
+    border-radius: 10px;
+}
+
+.descriptioncontainer button {
+    background: linear-gradient(to right, #00ff75, #00bfff);
+    font-family: 'Wix Madefor Display', sans-serif;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: #171717;
+    border-style: none;
+    transition: 0.5s;
+}
+
+.descriptioncontainer h3 {
+    text-align: center;
+}
+
+.descriptioncontainer ul {
+    padding-left: 20px;
+}
+
+.specialcontainer1,
+.specialcontainer2,
+.specialcontainer3 {
+    display: flex;
+    height: 60%;
+    align-items: center;
+}
+
+/* area de breakpoints */
+
+
+
+@media screen and (min-width: 1000px) {
+    .containercursos {
+        flex-direction: row;
+        justify-content: center;
+        align-items: normal;
+        height: 800px;
+    }
+
+    .test {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .curso {
+        max-width: 500px;
+    }
+
+    .curso p {
+        font-size: 1.05em;
+    }
+
+    .specialcontainer1 {
+        justify-content: space-between;
+    }
+
+    .specialcontainer1 div {
+        width: 280px;
+        height: 280px;
+        background-image: url(imagenes/derivada.png);
+        background-size: cover;
+        margin-right: 50px;
+        border-radius: 20px;
+        transition: 0.5s;
+
+    }
+
+    .specialcontainer1 div:hover {
+        width: 300px;
+        height: 300px;
+    }
+
+    .specialcontainer2 {
+        justify-content: space-between;
+    }
+
+    .specialcontainer2 div {
+        width: 280px;
+        height: 280px;
+        background-image: url(imagenes/calculator.png);
+        background-size: cover;
+        margin-right: 50px;
+        border-radius: 20px;
+        transition: 0.5s;
+    }
+
+    .specialcontainer2 div:hover {
+        width: 300px;
+        height: 300px;
+    }
+
+    .specialcontainer3 {
+        justify-content: space-between;
+    }
+
+    .specialcontainer3 div {
+        width: 280px;
+        height: 280px;
+        background-image: url(imagenes/integral.png);
+        background-size: cover;
+        margin-right: 50px;
+        border-radius: 20px;
+        transition: 0.5s;
+    }
+
+    .specialcontainer3 div:hover {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .descriptioncontainer {
+        display: grid;
+        grid-template-columns: 700px 500px;
+        grid-template-rows: 500px 500px 500px;
+        justify-content: space-around;
+    }
+
+    .specialcontainer1 div,
+    .specialcontainer2 div,
+    .specialcontainer3 div {
+        display: none;
+    }
+
+    .imgcontainer1,
+    .imgcontainer2,
+    .imgcontainer3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        width: 500px;
+    }
+
+    .imgcontainer1 div,
+    .imgcontainer2 div,
+    .imgcontainer3 div {
+        height: 400px;
+        width: 400px;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    .imgcontainer1 div {
+        background-image: url(imagenes/derivada.png);
+        background-size: cover;
+    }
+
+    .imgcontainer2 div {
+        background-image: url(imagenes/calculator.png);
+        background-size: cover;
+    }
+
+    .imgcontainer3 div {
+        background-image: url(imagenes/integral.png);
+        background-size: cover;
+    }
+
+    .imgcontainer1 div:hover,
+    .imgcontainer2 div:hover,
+    .imgcontainer3 div:hover {
+        height: 500px;
+        width: 500px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+}
