@@ -224,7 +224,7 @@ header .partsheader {
     padding: 20px;
 }
 
-.cartas>div {
+.cartas>a {
     display: flex;
     flex-direction: column;
     background-color: #dddddd;
@@ -237,10 +237,12 @@ header .partsheader {
     border-radius: 10px;
     transition: 0.5s;
     border: 2px outset white;
+    text-decoration: none;
+    color: #171717;
 
 }
 
-.cartas>div:hover {
+.cartas>a:hover {
     background-color: #171717;
     color: #dddddd;
     border: 1.5px outset black;
@@ -255,9 +257,9 @@ header .partsheader {
     transition: 0.5s
 }
 
-.cartas>div:hover .imgextra1,
-.cartas>div:hover .imgextra2,
-.cartas>div:hover .imgextra3 {
+.cartas>a:hover .imgextra1,
+.cartas>a:hover .imgextra2,
+.cartas>a:hover .imgextra3 {
     height: 230px;
     width: 230px;
     margin-top: 5px;
@@ -308,7 +310,7 @@ header .partsheader {
 
 }
 
-.containertercero button {
+.containertercero a {
     padding: 20px;
     margin-top: 20px;
     background-color: #171717;
@@ -319,9 +321,10 @@ header .partsheader {
     border-style: none;
     border-radius: 10px;
     transition: 1s;
+    text-decoration: none;
 }
 
-.containertercero button:hover {
+.containertercero a:hover {
     box-shadow: inset 0 0px 5px rgba(255, 255, 255, 0.8);
 }
 
