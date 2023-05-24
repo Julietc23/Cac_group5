@@ -103,18 +103,19 @@ main {
     background-color: rgb(214, 213, 213);
     box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.518);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 2rem;
     justify-content: center;
     align-items: center;
     padding: 6%;
+    height: 500px;
 }
 .input-item2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 90%;
     transform: translateY(10%);
 }
 textarea{
@@ -134,19 +135,20 @@ textarea{
     transition: 0.3s;
 }
 .botoninput{
-    padding:0.6rem 1.3rem;
+    padding: 10px;
     background-color: #222831;
     border:2px solid rgba(140, 140, 140, 0.453);
     font-size: 1rem;
     color:aliceblue;
     line-height: 1;
-    border-radius:25px;
     cursor: pointer;
     outline: none;
     transition: 0.3s;
-    margin: 2%;
-    width: 70%;
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
     transition: 0.3s;
+    border-radius: 10px;
 }
 .botoninput:hover{
     background-color: transparent;
@@ -324,5 +326,11 @@ footer{
     }
     100%{
         color: rgb(110, 110, 110);
+    }
+}
+
+@media screen and (min-width: 800px){
+    .input-container {
+        flex-direction: row;
     }
 }
