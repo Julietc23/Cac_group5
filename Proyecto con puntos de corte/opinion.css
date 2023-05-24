@@ -72,13 +72,181 @@ main {
     grid-row-start: 2;
     overflow: auto;
     padding: 3%;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+.titulo{
+    text-align: center;
+    padding: 4rem;
+    color:rgb(32, 31, 31);
+    background-color:rgb(183, 181, 181);
 }
 #opinion-app{
+    height: 100%;
+    background-color: #3F4E4F;
+}
+.input{
+    width: 80%;
+    outline: none;
+    border:2px solid rgba(137, 136, 136, 0.621);
+    background: none;
+    padding: 0.6rem;
+    color:#3F4E4F;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+    margin: 1rem;
+    margin-left: 0.5rem;
+    transition: 0.3s;
+}
+.input-container{
+    background-color: rgb(214, 213, 213);
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.518);
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+}
+.input-item2{
     display: flex;
     flex-direction: column;
-    height: 30%;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    transform: translateY(10%);
 }
-
+textarea{
+    background: none;
+    outline: none;
+    padding: 0.4rem;
+    min-height: 120px;
+    width: 100%;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+    color:#3F4E4F;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.botoninput{
+    padding:0.6rem 1.3rem;
+    background-color: #222831;
+    border:2px solid rgba(140, 140, 140, 0.453);
+    font-size: 1rem;
+    color:aliceblue;
+    line-height: 1;
+    border-radius:25px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    margin: 2%;
+    width: 70%;
+    transition: 0.3s;
+}
+.botoninput:hover{
+    background-color: transparent;
+    color:rgba(94, 94, 94);
+    transition: 0.3s;
+}
+.opinionCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddddd;
+}
+.opinionSeccion{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin:1rem;
+}
+.seccionOp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: #222831;
+    border: 1px solid black;
+    margin:2rem;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.582);
+    color: aliceblue;
+    border-radius: 22px;
+    width: 15rem;
+    height: 23rem;
+}
+.seccionOp p{
+    padding: 0.8rem;
+    background-color: aliceblue;
+    color: #222831;
+}
+.secus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    background-color: #222831;
+    border: 1px solid black;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.582);
+    color: aliceblue;
+    border-radius: 22px;
+}
+.secus img{
+    height: 40%;
+}
+.numeros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.4rem;
+    background-color:#3F4E4F;
+    padding: 2rem;
+    border-radius: 7px;
+    width: 70%;
+}
+.numeros p{
+    margin:0.4rem;
+    padding: 0.4rem;
+    background-color: aliceblue;
+    color: #222831;
+    border-radius: 7px;
+}
+#numeroOpi{
+    background-color: #222831;
+    color: aliceblue;
+    border-radius: 7px;
+    padding: 0.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.botonAc{
+    padding:0.6rem 1.3rem;
+    background-color: #222831;
+    border:2px solid rgba(140, 140, 140, 0.453);
+    font-size: 1rem;
+    color:aliceblue;
+    line-height: 1;
+    border-radius:25px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    margin: 2%;
+    width: 15rem;
+    transition: 0.3s;
+}
+.botonAc:hover{
+    background-color: transparent;
+    color:rgb(247, 246, 246);
+    transition: 0.3s;
+}
 /*todo lo relacionado al footer*/
 footer{
     grid-row-start: 3;
@@ -127,9 +295,16 @@ footer{
 .bgb{
     background-color: rgba(199, 199, 199, 0.2);
 }
+.labels{
+    padding:1%;
+    background-color: #222831;
+    border-radius: 7px;
+    color: aliceblue;
+}
 .titulocent{
     text-align: center;
 }
+
 /*Area de las animaciones*/
 @keyframes firstletter{
     0% {

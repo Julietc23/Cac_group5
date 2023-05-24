@@ -26,19 +26,34 @@
         </div>
     </header>
     <main>
-        <h1 class="titulocent">Consulta los mejores libros para leer sobre las Matemáticas!</h1>
+        <div class="titulo">
+            <h1>Conocé todas las opiniones de los que nos eligieron!</h1>
+        </div>
         <div id="opinion-app">
             <div class="input-container">
-                <input type="text" id="nombre">
-                <input type="text" id="usuario">
-                <textarea name="op" id="input"></textarea>
-                <button @click="colgarOpinion">Enviar opinion</button>
-                <p>{{opinionesHechas}} opiniones opinionesHechas</p>
+                <div class="input-item1">
+                    <div>
+                        <span class="labels">Nombre</span>
+                        <input type="text" id="nombre" class="input">
+                    </div>
+                    <div>
+                        <span class="labels">Usuario</span>
+                        <input type="text" id="usuario" class="input">
+                    </div>
+                </div>
+                <div class="input-item2">
+                    <textarea name="op" id="input" placeholder="Contanos que opinas!.."></textarea>
+                    <button @click="colgarOpinion" class="botoninput">Enviar opinion</button>
+                </div>
             </div>
-            <div>
-                <button @click="mostrarDatosdeAPI">Actualizar opiniones</button>
-                <div class="opinionSeccion" v-html="opinionUsuario"></div>
-                <div class="opinionSeccion" v-html="opinionActuales"></div>
+            <div class="opinionCont">
+                <div class="numeros">
+                    <span id="numeroOpi">{{opinionesHechas}}</span>
+                    <p>Opiniones vistas</p>
+                <button class="botonAc" @click="mostrarDatosdeAPI">Actualizar opiniones</button>
+                </div>
+                <div class="opinionSeccion1" v-html="opinionUsuario"></div>
+                <div class="opinionSeccion2" v-html="opinionActuales"></div>
             </div>
         </div>
     </main>
