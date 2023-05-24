@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imagenes/2fav.ico" type="ico" sizes="16px">
     <title>4Mathics - Biblioteca</title>
-    <link rel="stylesheet" href="biblio.css">
+    <link rel="stylesheet" href="opinion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="partsheader">
@@ -18,13 +20,27 @@
             <nav>
                 <a href="inicio.html">Inicio</a>
                 <a href="cursos.html">Cursos</a>
-                <a class="fijo" href="">Bibliografia</a>
+                <a class="fijo" href="">Foro</a>
                 <a href="form.html">Soporte</a>
             </nav>
         </div>
     </header>
     <main>
-
+        <h1 class="titulocent">Consulta los mejores libros para leer sobre las Matemáticas!</h1>
+        <div id="opinion-app">
+            <div class="input-container">
+                <input type="text" id="nombre">
+                <input type="text" id="usuario">
+                <textarea name="op" id="input"></textarea>
+                <button @click="colgarOpinion">Enviar opinion</button>
+                <p>{{opinionesHechas}} opiniones opinionesHechas</p>
+            </div>
+            <div>
+                <button @click="mostrarDatosdeAPI">Actualizar opiniones</button>
+                <div class="opinionSeccion" v-html="opinionUsuario"></div>
+                <div class="opinionSeccion" v-html="opinionActuales"></div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="containerfooter">
@@ -38,5 +54,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="opinion.js"></script>
 </body>
+
 </html>

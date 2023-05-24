@@ -1,6 +1,6 @@
 body{
     display:grid;
-    grid-template: 150px 1000px 150px/repeat(3, auto);
+    grid-template: 150px 1000px 100px/repeat(3, auto);
     margin: 0;
     background-color: #222831;
 }
@@ -65,10 +65,20 @@ header .partsheader {
 /*Todo lo relacionado al main*/
 
 main {
+    display: flex;
+    flex-direction: column;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
+    overflow: auto;
+    padding: 3%;
 }
+#opinion-app{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+}
+
 /*todo lo relacionado al footer*/
 footer{
     grid-row-start: 3;
@@ -116,6 +126,9 @@ footer{
 /*generalidades de los titulos*/
 .bgb{
     background-color: rgba(199, 199, 199, 0.2);
+}
+.titulocent{
+    text-align: center;
 }
 /*Area de las animaciones*/
 @keyframes firstletter{
